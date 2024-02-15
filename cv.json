@@ -162,8 +162,8 @@
     {
       "name": "Diccionario Full Stack",
       "isActive": true,
-      "description": "Descripción de temas y conceptos abordados en el curso de Full Stack, para repaso personal de estudio más accesible.",
-      "highlights": ["Documentación", "Practica Integradora"],
+      "description": "Descripción de temas y conceptos abordados en el curso de Full Stack Development, para uso personal de estudio más accesible y muestra de conceptos practicados.",
+      "highlights": ["Documentación", "React.js", "Full Stack", "Tailwind"],
       "url": "https://fsdocumentation.netlify.app",
       "github": "https://github.com/joaquinGV/FullStackDictionary"
     },
@@ -171,15 +171,28 @@
       "name": "Ecommerce API",
       "isActive": true,
       "description": "Creación de API funcional, estrucurado por capas, con procesos de seguridad y buenas practicas. ",
-      "highlights": ["Express", "Node.js", "MongoDB", "Swagger", "Mocha"],
+      "highlights": [
+        "Express",
+        "Node.js",
+        "MongoDB",
+        "Swagger",
+        "Mocha",
+        "Functional Testing",
+        "Faker",
+        "Mocks",
+        "MVC",
+        "JWT",
+        "Handlebars",
+        "WebSockets"
+      ],
       "url": "https://backendapi-development.up.railway.app/api/docs/",
       "github": "https://github.com/joaquinGV/FullStackDictionary"
     },
     {
       "name": "Notes App Challenge",
       "isActive": true,
-      "description": "Desafio de 3 dias para contratación en Full Stack con app independientes desplagadas. ",
-      "highlights": ["+2000 usuarios activos", "Retos para cualquier lenguaje"],
+      "description": "Desafio de 3 dias para contratación en Full Stack con Front y Back independientes desplagados. ",
+      "highlights": ["Node.js", "Express", "React.js", "API", "CORS", "Hooks"],
       "url": "https://notesappjagv.netlify.app",
       "github": "https://github.com/joaquinGV/ReactNotesApp"
     },
@@ -187,7 +200,14 @@
       "name": "Mooncy Ecommerce",
       "isActive": true,
       "description": "Ecommerce no funcional de practica de desarrollo front-end con React y Firebase.",
-      "highlights": ["React", "Material-ui", "Bootstrap", "Redux"],
+      "highlights": [
+        "React",
+        "Material-ui",
+        "Bootstrap",
+        "Redux",
+        "Firebase",
+        "FireStore"
+      ],
       "url": "https://joaquingv.github.io/Ecommerce-StarJewerly/",
       "github": "https://github.com/joaquinGV/Ecommerce-StarJewerly/tree/main/React-StarJewerlyProject"
     }
