@@ -2,7 +2,10 @@
 dist/
 
 # generated types
-# .astro/
+.astro/
+
+pnpm-lock.yaml*
+pnpm-lock.yaml
 
 # dependencies
 node_modules/
