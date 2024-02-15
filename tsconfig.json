@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "C:/Users/yiuyi/Curso-Coderhouse/Portafolio/Portfolio-minimalist/minimalist-portfolio-json",
+    "baseUrl": ".",
     "paths": {
       "@cv": ["./cv.json"],
       "@/*": ["src/*"]

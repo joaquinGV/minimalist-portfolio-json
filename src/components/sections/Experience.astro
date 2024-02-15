@@ -7,45 +7,45 @@ import { work } from "@cv";
 <Section title="Experiencia laboral">
   <ul class="flex flex-col gap-8">
     {
-      work.map(
-        ({ name, startDate, endDate, position, summary, url }) => {
-          const startYear = new Date(startDate).getFullYear();
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual";
-          const years = `${startYear} - ${endYear}`;
+      work.map(({ name, startDate, endDate, position, summary, url }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate != null ? new Date(endDate).getFullYear() : "Actual";
+        const years = `${startYear} - ${endYear}`;
 
-          return (
-            <li>
-              <article>
-                <header class="flex justify-between items-start mb-1">
-                  <div>
-                    <h3
-                      class=" font-medium text-[#111]
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between items-start mb-1">
+                <div>
+                  <h3
+                    class=" font-medium text-[#111] text-[1.1rem]
                     "
+                  >
+                    <a
+                      href={url}
+                      title={`Ver ${name}`}
+                      target="_blank"
+                      class="text-[#111] hover:underline"
                     >
-                      <a
-                        href={url}
-                        title={`Ver ${name}`}
-                        target="_blank"
-                        class="text-[#111] hover:underline"
-                      >
-                        {name}
-                      </a>
-                    </h3>
-                    <h4 class="text-[#222] font-normal">{position}</h4>
-                  </div>
+                      {name}
+                    </a>
+                  </h3>
+                  <h4 class="text-[#222] font-normal">{position}</h4>
+                </div>
 
-                  <time class="text-[#555] text-sm">{years}</time>
-                </header>
+                <time class="text-sm text-[#555] text-right min-w-24 pt-1">
+                  {years}
+                </time>
+              </header>
 
-                <footer>
-                  <p>{summary}</p>
-                </footer>
-              </article>
-            </li>
-          );
-        }
-      )
+              <footer>
+                <p>{summary}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>

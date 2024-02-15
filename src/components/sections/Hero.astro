@@ -25,10 +25,10 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
-  <div class="flex flex-row items-center justify-between gap-2">
-    <div class="flex flex-col gap-2 pr-8">
+  <div class="container flex flex-row items-center justify-between gap-4">
+    <div class="info flex flex-col gap-2 ">
       <h1 class="font-bold text-3xl">{name}</h1>
-      <h2 class="text-[#444] font-medium text-lg text-balance">{label}</h2>
+      <h2 class="text-[#444] font-medium text-lg text-balance text-justify">{label}</h2>
       <span
         class="text-[#666] flex items-center gap-1 text-sm leading-[-0.05rem]"
       >
@@ -84,12 +84,30 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
         }
       </footer>
     </div>
-    <figure>
+    <figure class="m-0">
       <img
         src={image}
         alt={name}
-        class="w-[128px] aspect-square rounded-2xl object-cover flex justify-center items-center"
+        class="w-[128px] aspect-square rounded-2xl object-cover"
       />
     </figure>
   </div>
 </Section>
+
+<style>
+  @media (width <= 700px) {
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
+
+  figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    text-wrap: balance;
+  }
+</style>

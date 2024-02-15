@@ -3,6 +3,7 @@ import { type SocialIcon } from "@/types";
 import { basics } from "@cv";
 
 const { profiles } = basics;
+import ButtonComands from "@/components/ButtonComands.jsx";
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub: `<svg
@@ -44,7 +45,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 });
 ---
 
-<!-- <ButtonComands client:only /> -->
+<ButtonComands client:only />
 <footer id="normal-footer" class="no-print">
   Pulsa <kbd>Cmd</kbd> + <kbd>K</kbd> para abrir la paleta de comandos.
 </footer>
@@ -178,28 +179,28 @@ const profilesInfo = profiles.map(({ network, url }) => {
           document.documentElement.classList.add("dark");
         },
       },
-//       {
-//         id: "Idioma",
-//         title: "Cambiar de idioma",
-//         icon: `<svg ${icons} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vocabulary" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-//   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-//   <path d="M10 19h-6a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2z" />
-//   <path d="M12 5v16" />
-//   <path d="M7 7h1" />
-//   <path d="M7 11h1" />
-//   <path d="M16 7h1" />
-//   <path d="M16 11h1" />
-//   <path d="M16 15h1" />
-// </svg>`,
-//         children: ["Spanish Mode", "English Mode"],
-//         hotkey: "ctrl+S",
-//         section: "Acciones",
-//         handler: () => {
-//           ninja.open({ parent: "Language" });
-//           // if menu opened that prevent it from closing on select that action, no need if you don't have child actions
-//           return { keepOpen: true };
-//         },
-//       },
+      //       {
+      //         id: "Idioma",
+      //         title: "Cambiar de idioma",
+      //         icon: `<svg ${icons} xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-vocabulary" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      //   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      //   <path d="M10 19h-6a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h6a2 2 0 0 1 2 2a2 2 0 0 1 2 -2h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2z" />
+      //   <path d="M12 5v16" />
+      //   <path d="M7 7h1" />
+      //   <path d="M7 11h1" />
+      //   <path d="M16 7h1" />
+      //   <path d="M16 11h1" />
+      //   <path d="M16 15h1" />
+      // </svg>`,
+      //         children: ["Spanish Mode", "English Mode"],
+      //         hotkey: "ctrl+S",
+      //         section: "Acciones",
+      //         handler: () => {
+      //           ninja.open({ parent: "Language" });
+      //           // if menu opened that prevent it from closing on select that action, no need if you don't have child actions
+      //           return { keepOpen: true };
+      //         },
+      //       },
       {
         id: "Spanish Mode",
         title: "Spanish Mode",
