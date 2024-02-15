@@ -26,9 +26,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 
 <Section>
   <div class="container flex flex-row items-center justify-between gap-4">
-    <div class="info flex flex-col gap-2 ">
+    <div class="info flex flex-col gap-2">
       <h1 class="font-bold text-3xl">{name}</h1>
-      <h2 class="text-[#444] font-medium text-lg text-balance text-justify">{label}</h2>
+      <h2 class="text-[#444] font-medium text-lg text-balance text-justify mr-6">
+        {label}
+      </h2>
       <span
         class="text-[#666] flex items-center gap-1 text-sm leading-[-0.05rem]"
       >
