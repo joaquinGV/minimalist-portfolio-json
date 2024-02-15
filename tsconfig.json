@@ -3,12 +3,9 @@
   "compilerOptions": {
     "baseUrl": "C:/Users/yiuyi/Curso-Coderhouse/Portafolio/Portfolio-minimalist/minimalist-portfolio-json",
     "paths": {
-      "@cv": [
-        "./cv.json"
-      ],
-      "@/*": [
-        "src/*"
-      ]
+      "@cv": ["./cv.json"],
+      "@cve": ["./cv_english.json"],
+      "@/*": ["src/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "preact"

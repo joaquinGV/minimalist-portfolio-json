@@ -1,33 +1,41 @@
 ---
-import Section from "../Section.astro"
+import Section from "../Section.astro";
 
-import { work } from "@cv"
+import { work } from "@cv";
 ---
 
 <Section title="Experiencia laboral">
-  <ul>
+  <ul class="flex flex-col gap-8">
     {
       work.map(
         ({ name, startDate, endDate, position, summary, highlights, url }) => {
-          const startYear = new Date(startDate).getFullYear()
+          const startYear = new Date(startDate).getFullYear();
           const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
-          const years = `${startYear} - ${endYear}`
+            endDate != null ? new Date(endDate).getFullYear() : "Actual";
+          const years = `${startYear} - ${endYear}`;
 
           return (
             <li>
               <article>
-                <header>
+                <header class="flex justify-between items-start mb-1">
                   <div>
-                    <h3>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
+                    <h3
+                      class=" font-medium text-[#111]
+                    "
+                    >
+                      <a
+                        href={url}
+                        title={`Ver ${name}`}
+                        target="_blank"
+                        class="text-[#111] hover:underline"
+                      >
                         {name}
                       </a>
                     </h3>
-                    <h4>{position}</h4>
+                    <h4 class="text-[#222] font-normal">{position}</h4>
                   </div>
 
-                  <time>{years}</time>
+                  <time class="text-[#555] text-sm">{years}</time>
                 </header>
 
                 <footer>
@@ -35,54 +43,9 @@ import { work } from "@cv"
                 </footer>
               </article>
             </li>
-          )
+          );
         }
       )
     }
   </ul>
 </Section>
-
-<style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  article h3 {
-    font-weight: 500;
-    color: #111;
-  }
-
-  article a {
-    color: #111;
-  }
-
-  article a:hover {
-    text-decoration: underline;
-  }
-
-  article h4 {
-    color: #222;
-    font-weight: 400;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-  }
-
-  time {
-    color: #555;
-    font-size: 0.85rem;
-    min-width: 102px;
-  }
-
-  @media (width <= 700px) {
-    time {
-      text-align: right;
-    }
-  }
-</style>

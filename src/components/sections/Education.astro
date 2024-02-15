@@ -1,27 +1,27 @@
 ---
-import Section from "../Section.astro"
+import Section from "../Section.astro";
 
-import { education } from "@cv"
+import { education } from "@cv";
 ---
 
 <Section title="Educación">
-  <ul>
+  <ul class="flex flex-col gap-8">
     {
       education.map(({ institution, startDate, endDate, area }) => {
-        const startYear = new Date(startDate).getFullYear()
+        const startYear = new Date(startDate).getFullYear();
         const endYear =
-          endDate != null ? new Date(endDate).getFullYear() : "Actual"
-        const years = `${startYear} - ${endYear}`
+          endDate != null ? new Date(endDate).getFullYear() : "Actual";
+        const years = `${startYear} - ${endYear}`;
 
         return (
           <li>
             <article>
-              <header>
+              <header class="flex justify-between items-start mb-1">
                 <div>
-                  <h3>{institution}</h3>
+                  <h3 class=" font-medium text-[#111]">{institution}</h3>
                 </div>
 
-                <time>{years}</time>
+                <time class="text-[#555] text-sm">{years}</time>
               </header>
 
               <footer>
@@ -29,40 +29,8 @@ import { education } from "@cv"
               </footer>
             </article>
           </li>
-        )
+        );
       })
     }
   </ul>
 </Section>
-
-<style>
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  article h3 {
-    font-weight: 500;
-    color: #111;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-  }
-
-  time {
-    color: #555;
-    font-size: 0.85rem;
-    min-width: 102px;
-  }
-
-  @media (width <= 700px) {
-    time {
-      text-align: right;
-    }
-  }
-</style>
