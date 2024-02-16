@@ -108,16 +108,6 @@
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
     },
     {
-      "name": "MySQL",
-      "level": "Junior",
-      "keywords": [
-        "Bases de Datos",
-        "SQL",
-        "Almacenamiento de Datos",
-        "Backend"
-      ]
-    },
-    {
       "name": "Git",
       "level": "MID",
       "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
@@ -146,6 +136,31 @@
       "name": "Express",
       "level": "MID",
       "keywords": ["API", "Backend", "JavaScript Library"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Junior",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Junior",
+      "keywords": ["Comandos basicos", "Almacenamiento de Datos"]
+    },
+    {
+      "name": "Java",
+      "level": "Junior",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
     }
   ],
   "languages": [
