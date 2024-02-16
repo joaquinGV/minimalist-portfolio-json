@@ -21,7 +21,7 @@ const ButtonComands = () => {
   return (
     <button
       onClick={handleClick}
-      class="fixed bottom-3 right-3 md:hidden bg-gray-200 m-auto text-gray-500 text-2xl hover:text-gray-900 border border-gray-300 rounded-2xl px-3 py-2 items-center align-middle fill-none"
+      class="fixed bottom-3 right-3 lg:hidden bg-gray-200 m-auto text-gray-500 text-3xl hover:text-gray-900 border border-gray-300 rounded-2xl px-3 py-2 items-center align-middle fill-none lg:px-1"
     >
       ⌘
     </button>
