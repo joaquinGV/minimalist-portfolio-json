@@ -225,6 +225,14 @@
       ],
       "url": "https://joaquingv.github.io/Ecommerce-StarJewerly/",
       "github": "https://github.com/joaquinGV/Ecommerce-StarJewerly/tree/main/React-StarJewerlyProject"
+    },
+    {
+      "name": "Alura Encrypt",
+      "isActive": true,
+      "description": "Desafio de Front-end de Alura Latam para crear un encriptador de texto.",
+      "highlights": ["JavaScript", "Postgres.js", "CSS", "Vite"],
+      "url": "https://joaquingv.github.io/Ecriptador/",
+      "github": "https://github.com/joaquinGV/Ecriptador"
     }
   ]
 }
