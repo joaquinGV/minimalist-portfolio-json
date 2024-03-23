@@ -200,8 +200,8 @@
         "Handlebars",
         "WebSockets"
       ],
-      "url": "https://backendapi-development.up.railway.app/api/docs/",
-      "github": "https://github.com/joaquinGV/FullStackDictionary"
+      "url": "https://backendcourse.up.railway.app/api/docs/",
+      "github": "https://github.com/joaquinGV/backendCourse/tree/main/Clase46_entregableFinal"
     },
     {
       "name": "Notes App Challenge",
